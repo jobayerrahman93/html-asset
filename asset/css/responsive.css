@@ -1,0 +1,133 @@
+
+@media screen and (max-width:480px){
+    .navbar-brand {
+        font-size: 13px!important;
+    }
+   
+    .dropdown-menu .started-submenu-content {
+        padding: 20px;
+    }
+    .hero-media{
+        display: none;
+    }
+
+
+    /* revinent */
+    .reinvent-content{
+        flex-direction: column;
+        align-items: start!important;
+        justify-content: start;
+    }
+    .reinvent-content button{
+        margin-top: 10px;
+    }
+
+    /* product */
+
+    .product-section .product-circle-shape{
+        display: none;
+    }
+    .product-section .product-shape{
+        display: none;
+    }
+
+    .our-product-des{
+        width: 100%;
+    }
+    .savemoney-reducing-content {
+        padding: 0 0;
+      }
+      .save-money-slider{
+          margin-top: 20px;
+      }
+      .video-library-content {
+        padding: 0 0;
+        
+      }
+}
+
+@media screen and (max-width:767px){
+
+    .dropdown-menu .started-submenu-content {
+        padding: 20px;
+      }
+
+    .hero-content {
+        padding: 72px 0;
+    }
+    .hero-media img{
+        display: none;
+    }
+      /* revinent */
+      .reinvent-content{
+        flex-direction: column;
+        align-items: start!important;
+        justify-content: start;
+    }
+    .reinvent-content button{
+        margin-top: 10px;
+    }
+
+      /* product */
+
+      .product-section .product-circle-shape{
+        display: none;
+    }
+    .product-section .product-shape{
+        display: none;
+    }
+
+    .product-card-container .product-card{
+        box-shadow: 0px 1px 8px rgba(106, 105, 194, 0.25);
+    }
+    .savemoney-reducing-content {
+        padding: 0 0;
+      }
+      .save-money-slider{
+          margin-top: 20px;
+      }
+      .video-library-content {
+        padding: 0 0;
+        
+      }
+      .our-product-des{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 991px) {
+    .navbar-nav .dropdown-menu {
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .navbar-nav .dropdown-menu.show {
+        display: block;
+    }
+    .product-dropdown-menu {
+        width: auto;
+        margin-left: 0px;
+        border: 0px;
+
+    }
+
+     /* product */
+
+     .product-section .product-circle-shape{
+        display: none;
+    }
+    .product-section .product-shape{
+        display: none;
+    }
+    .savemoney-reducing-content {
+        padding: 0 0;
+      }
+      .save-money-slider{
+          margin-top: 20px;
+      }
+      .video-library-content {
+        padding: 0 0;
+        
+      }
+}

@@ -1,0 +1,372 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/* root element */
+
+:root {
+  --main-color: #f0b45b;
+  --secondary-color: #040c17;
+  --title-color: #fff;
+}
+
+/* universal reset */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Jost", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+.btn:hover {
+  color: #fff !important;
+}
+
+/* scroll bar */
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+/* navbar */
+
+.navbar {
+  transition: all 0.5s linear !important;
+  -webkit-transition: all 0.5s linear !important;
+  -moz-transition: all 0.5s linear !important;
+  -ms-transition: all 0.5s linear !important;
+  -o-transition: all 0.5s linear !important;
+  background: transparent;
+  position: fixed !important;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navbar-nav .nav-item .nav-link {
+  font-size: 16px !important;
+  color: var(--main-color) !important;
+  margin-right: 24px !important;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--main-color) !important;
+}
+
+.navbar-brand {
+  font-size: 16px !important;
+  display: flex;
+}
+
+.navbar-brand img {
+  max-height: 84px;
+  padding-left: 10px !important;
+}
+
+.sticky {
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+}
+
+.login-btn {
+  color: var(--main-color);
+  padding: 5px 20px;
+  border: 1px solid var(--main-color);
+  position: relative;
+  z-index: 1;
+  font-weight: 700;
+  background: #f0b45b1a;
+}
+
+.login-btn:hover {
+  color: var(--title-color);
+}
+/* .login-btn::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #da842b;
+  transition: 0.5s ease-in;
+  color: #fff;
+  z-index: -1;
+}
+
+.login-btn:hover::after {
+  width: 100%;
+} */
+
+.box-shadow-header {
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-header {
+  background: var(--secondary-color);
+}
+
+/* hero banner section */
+
+.banner-section .slider-content {
+  background: url(../img/banner-1.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  object-fit: cover;
+  padding: 265px 0;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+}
+
+.banner-section .slider-content::after {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.banner-section p {
+  color: var(--title-color);
+}
+
+.banner-section .appointment-btn {
+  background: #da842b;
+  padding: 8px 15px;
+  color: #fff;
+}
+
+.banner-section .contact-btn {
+  padding: 8px 15px;
+  color: var(--main-color);
+  border: 1px solid;
+  margin-left: 10px;
+}
+
+/* about us section */
+
+.about-section {
+  padding: 100px 0;
+}
+
+.about-section .section-title {
+  color: var(--main-color);
+}
+
+.about-section h1 {
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.about-content p {
+  font-size: 14px;
+}
+
+.about-media .img-1 img {
+  width: 400px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.about-media .img-2 img {
+  width: 400px;
+  border-radius: 12px;
+  margin-top: -100px;
+  cursor: pointer;
+}
+
+.about-content .about-media .img-1 {
+  position: relative;
+}
+
+.about-barber-1 {
+  padding: 6px 6px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: 2px;
+  right: 0;
+  border-radius: 8px;
+  width: 43%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.about-content .img-1:hover .about-barber-1 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about-barber-1 .about-barber-content h6 {
+  font-size: 13px;
+}
+
+.about-barber-1 i {
+  color: var(--main-color);
+}
+
+.about-barber-1 .about-barber-content p {
+  color: var(--main-color);
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+.about-content .about-media .img-2 {
+  position: relative;
+}
+
+.about-barber-2 {
+  padding: 6px 6px;
+  background-color: var(--secondary-color);
+  position: absolute;
+  top: -100px;
+  border-radius: 8px;
+  width: 43%;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.about-content .img-2:hover .about-barber-2 {
+  visibility: visible;
+  opacity: 1;
+}
+
+.about-barber-2 .about-barber-content h6 {
+  font-size: 13px;
+}
+
+.about-barber-2 i {
+  color: var(--main-color);
+}
+
+.about-barber-2 .about-barber-content p {
+  color: var(--main-color);
+  font-size: 13px;
+  margin-bottom: 0px;
+}
+
+.about-des .about-des-details {
+  width: 75%;
+}
+
+.about-des .contact-btn {
+  padding: 8px 15px;
+  background: var(--main-color);
+  color: #fff;
+  margin-left: 0px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/* footer section */
+
+footer {
+  padding: 40px 0;
+  background-color: var(--secondary-color);
+  margin-top: 100px;
+}
+
+.footer-media img {
+  max-height: 100px;
+}
+
+.footer-media p {
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.footer-box {
+  height: 100%;
+  margin-top: 6px;
+}
+.footer-box h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.footer-box ul {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 28px;
+}
+
+.footer-box ul li a {
+  font-size: 14px;
+  color: var(--title-color);
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.footer-btn {
+  border: 1px solid var(--main-color);
+  transition: border-color 0.5s;
+  -webkit-transition: border-color 0.5s;
+  -moz-transition: border-color 0.5s;
+  -ms-transition: border-color 0.5s;
+  -o-transition: border-color 0.5s;
+}
+.footer-btn:hover {
+  color: #000 !important;
+  border-color: #000;
+}
+
+.footer-social-icon {
+  margin-top: 15px;
+}
+
+.footer-social-icon a {
+  background: transparent;
+  color: var(--title-color);
+  display: inline-block;
+  font-size: 20px;
+  text-align: center;
+  width: 36px;
+  transition: color 0.4s;
+  -webkit-transition: color 0.4s;
+  -moz-transition: color 0.4s;
+  -ms-transition: color 0.4s;
+  -o-transition: color 0.4s;
+}
+
+.footer-social-icon a:hover i {
+  color: var(--main-color);
+}
