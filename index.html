@@ -41,19 +41,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link">Home</a>
+              <a href="#" class="nav-link active">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">About Us</a>
+              <a href="#" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Services</a>
+              <a href="#" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Team</a>
+              <a href="#" class="nav-link">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Barber</a>
+              <a href="#" class="nav-link">Barber</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -249,7 +249,7 @@
     <script src="./asset/js/bootstrap.bundle.min.js"></script>
 
     <!-- slick js -->
-    <script
+    <!-- <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
     ></script>
@@ -260,7 +260,7 @@
     <script
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
+    ></script> -->
 
     <!-- <script>
       $(document).ready(function () {
@@ -276,6 +276,9 @@
       });
     </script> -->
 
+
+    <script src="./asset/js/jquery-3.6.0.min.js"></script>
+
     <script>
       $(window).scroll(function () {
         var scroll = $(window).scrollTop();
@@ -285,6 +288,15 @@
           $(".navbar").removeClass("scroll-header box-shadow-header");
         }
       });
+    </script>
+
+    <script>
+      $(document).ready(function() {
+        $(".nav-link").click(function () {
+            $(".nav-link").removeClass("active");
+          $(this).addClass("active");   
+});
+});
     </script>
   </body>
 </html>

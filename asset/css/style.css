@@ -141,6 +141,11 @@ img {
   background: var(--secondary-color);
 }
 
+.active {
+  border-bottom: 1px solid;
+  color: #000;
+}
+
 /* hero banner section */
 
 .banner-section .slider-content {
